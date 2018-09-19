@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'XKBasePresent_Example' do
+  pod 'XKBasePresent', :path => '../'
+
+  target 'XKBasePresent_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
