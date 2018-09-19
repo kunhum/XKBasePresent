@@ -1,0 +1,6 @@
+framework module XKBasePresent {
+  umbrella header "XKBasePresent-umbrella.h"
+
+  export *
+  module * { export * }
+}

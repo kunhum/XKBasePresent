@@ -1,0 +1,16 @@
+PODS:
+  - XKBasePresent (1.0.0)
+
+DEPENDENCIES:
+  - XKBasePresent (from `../`)
+
+EXTERNAL SOURCES:
+  XKBasePresent:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  XKBasePresent: 3f68ff83a97039fc1b455109ba4097f718356ffb
+
+PODFILE CHECKSUM: 4eea2017440e16a5466fd4718f5880c1427feeb6
+
+COCOAPODS: 1.5.3

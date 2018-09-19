@@ -38,8 +38,8 @@
 
 /* Begin PBXFileReference section */
 		0EC874DB073C287F6072D8F8 /* Pods_XKBasePresent_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKBasePresent_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1413A780247BCDBBA3E83C51 /* XKBasePresent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = XKBasePresent.podspec; path = ../XKBasePresent.podspec; sourceTree = "<group>"; };
-		1C01CD376586A662E12581C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		1413A780247BCDBBA3E83C51 /* XKBasePresent.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = XKBasePresent.podspec; path = ../XKBasePresent.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		1C01CD376586A662E12581C6 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		46A58776A94CAC10CDF6EE00 /* Pods-XKBasePresent_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKBasePresent_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKBasePresent_Tests/Pods-XKBasePresent_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		57F170B711AF251AFD1B0DEA /* Pods_XKBasePresent_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_XKBasePresent_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58A195388D20070C39A /* XKBasePresent_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XKBasePresent_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -64,7 +64,7 @@
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		B047EB01082F27D2EEAC3267 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		B047EB01082F27D2EEAC3267 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C8FA7B098AD947F5A5CDFE45 /* Pods-XKBasePresent_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKBasePresent_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-XKBasePresent_Example/Pods-XKBasePresent_Example.release.xcconfig"; sourceTree = "<group>"; };
 		C9F753A7C890BABFE5EAFC06 /* Pods-XKBasePresent_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-XKBasePresent_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-XKBasePresent_Example/Pods-XKBasePresent_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -299,15 +299,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-XKBasePresent_Example-checkManifestLockResult.txt",
 			);
@@ -321,15 +317,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-XKBasePresent_Example/Pods-XKBasePresent_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/XKBasePresent/XKBasePresent.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XKBasePresent.framework",
 			);
@@ -343,15 +335,11 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputFileListPaths = (
-			);
 			inputPaths = (
 				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
 				"${PODS_ROOT}/Manifest.lock",
 			);
 			name = "[CP] Check Pods Manifest.lock";
-			outputFileListPaths = (
-			);
 			outputPaths = (
 				"$(DERIVED_FILE_DIR)/Pods-XKBasePresent_Tests-checkManifestLockResult.txt",
 			);
