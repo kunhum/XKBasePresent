@@ -26,7 +26,7 @@
         
         self.effectStyle          = UIBlurEffectStyleDark;
         self.frameOfPresentedView = [UIApplication sharedApplication].keyWindow.bounds;
-        
+        self.maskViewAlpha = 0.5;
     }
     return self;
 }
@@ -50,7 +50,7 @@
     
     [UIView animateWithDuration:0.5 animations:^{
 //        self.visualView.alpha = 0.4;
-        self.bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.5];
+        self.bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:self.maskViewAlpha];
     }];
     
     if (self.xk_presentationTransitionWillBegin) {

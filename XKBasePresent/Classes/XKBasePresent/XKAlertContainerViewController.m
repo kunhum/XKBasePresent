@@ -19,29 +19,16 @@
 
 @implementation XKAlertContainerViewController
 
-- (instancetype)init {
-    if (self = [super init]) {
-        
-        self.transitioningDelegate  = self;
-        self.modalPresentationStyle = UIModalPresentationCustom;
-        
-    }
-    return self;
-}
-
-- (instancetype)initWithCoder:(NSCoder *)aDecoder {
-    if (self = [super initWithCoder:aDecoder]) {
-        self.transitioningDelegate  = self;
-        self.modalPresentationStyle = UIModalPresentationCustom;
-    }
-    return self;
-}
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    
+    [self initAction];
     self.view.backgroundColor = [UIColor clearColor];
+}
+
+- (void)initAction {
+    self.transitioningDelegate  = self;
+    self.modalPresentationStyle = UIModalPresentationCustom;
 }
 
 - (void)setFrameOfPresentedView:(CGRect)frameOfPresentedView {
@@ -58,6 +45,7 @@
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
     
     XKAlertPresentController *presentController = [[XKAlertPresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    presentController.maskViewAlpha = self.maskViewAlpha;
     
     if (_hasStyle) {
         presentController.effectStyle = self.effectStyle;

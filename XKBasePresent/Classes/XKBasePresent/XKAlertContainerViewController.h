@@ -20,4 +20,7 @@
 
 @property (nonatomic, strong) IBOutlet UIView *contentView;
 
+///遮罩的透明度，默认0.5
+@property (nonatomic, assign) CGFloat maskViewAlpha;
+
 @end

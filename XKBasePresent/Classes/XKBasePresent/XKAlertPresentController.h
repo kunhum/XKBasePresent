@@ -16,6 +16,9 @@
 ///必须指定
 @property (nonatomic, assign) CGRect frameOfPresentedView;
 
+///遮罩的透明度,默认0.5
+@property (nonatomic, assign) CGFloat maskViewAlpha;
+
 ///弹框即将显示时执行所需要的操作
 @property (nonatomic, copy) void(^xk_presentationTransitionWillBegin)(void);
 
@@ -27,5 +30,6 @@
 
 ///弹框消失之后执行所需要的操作
 @property (nonatomic, copy) void(^xk_dismissalTransitionDidEnd)(void);
+
 
 @end
