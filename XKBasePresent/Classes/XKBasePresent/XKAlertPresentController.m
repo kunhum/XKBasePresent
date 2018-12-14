@@ -44,8 +44,7 @@
     self.bgView = [UIView new];
     self.bgView.frame = self.containerView.bounds;
     self.bgView.backgroundColor = [[UIColor blackColor] colorWithAlphaComponent:0.0];
-//    self.visualView.frame = self.containerView.bounds;
-//    [self.containerView addSubview:self.visualView];
+    
     [self.containerView addSubview:self.bgView];
     
     [UIView animateWithDuration:0.5 animations:^{

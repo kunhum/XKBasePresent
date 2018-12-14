@@ -19,16 +19,37 @@
 
 @implementation XKAlertContainerViewController
 
+- (instancetype)initWithCoder:(NSCoder *)aDecoder {
+    if (self = [super initWithCoder:aDecoder]) {
+        [self initAction];
+    }
+    return self;
+    
+}
+- (instancetype)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil {
+    if (self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil]) {
+        [self initAction];
+    }
+    return self;
+}
+- (instancetype)init {
+    if (self = [super init]) {
+        [self initAction];
+    }
+    return self;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self initAction];
     self.view.backgroundColor = [UIColor clearColor];
+    
 }
 
 - (void)initAction {
     self.transitioningDelegate  = self;
     self.modalPresentationStyle = UIModalPresentationCustom;
+    self.maskViewAlpha = 0.5;
 }
 
 - (void)setFrameOfPresentedView:(CGRect)frameOfPresentedView {
@@ -41,10 +62,16 @@
     _hasStyle    = YES;
 }
 
+- (void)setMaskViewAlpha:(CGFloat)maskViewAlpha {
+    _maskViewAlpha = maskViewAlpha;
+    
+}
+
 #pragma mark UIViewControllerTransitioningDelegate
 - (UIPresentationController *)presentationControllerForPresentedViewController:(UIViewController *)presented presentingViewController:(UIViewController *)presenting sourceViewController:(UIViewController *)source {
     
     XKAlertPresentController *presentController = [[XKAlertPresentController alloc] initWithPresentedViewController:presented presentingViewController:presenting];
+    
     presentController.maskViewAlpha = self.maskViewAlpha;
     
     if (_hasStyle) {
