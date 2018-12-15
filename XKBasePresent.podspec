@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'XKBasePresent'
-  s.version          = '1.0.3'
+  s.version          = '1.0.4'
   s.summary          = '弹窗控制器基类'
 
 # This description is used to generate tags and improve search results.

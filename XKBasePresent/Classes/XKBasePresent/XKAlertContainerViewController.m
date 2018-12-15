@@ -86,12 +86,14 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    if (self.contentView == nil) {
-        return;
+    if (self.contentView) {
+        UITouch *touch = touches.anyObject;
+        CGPoint point  = [touch locationInView:self.view];
+        if (CGRectContainsPoint(self.contentView.frame, point) == NO) {
+            [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+        }
     }
-    UITouch *touch = touches.anyObject;
-    CGPoint point  = [touch locationInView:self.view];
-    if (CGRectContainsPoint(self.contentView.frame, point) == NO) {
+    else {
         [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     }
 }
