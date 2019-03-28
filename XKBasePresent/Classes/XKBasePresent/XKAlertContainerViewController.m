@@ -50,6 +50,7 @@
     self.transitioningDelegate  = self;
     self.modalPresentationStyle = UIModalPresentationCustom;
     self.maskViewAlpha = 0.5;
+    self.dismissWhenTapOutsideContentView = YES;
 }
 
 - (void)setFrameOfPresentedView:(CGRect)frameOfPresentedView {
@@ -86,15 +87,18 @@
 
 - (void)touchesBegan:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event {
     
-    if (self.contentView) {
-        UITouch *touch = touches.anyObject;
-        CGPoint point  = [touch locationInView:self.view];
-        if (CGRectContainsPoint(self.contentView.frame, point) == NO) {
+    if (self.dismissWhenTapOutsideContentView) {
+        
+        if (self.contentView) {
+            UITouch *touch = touches.anyObject;
+            CGPoint point  = [touch locationInView:self.view];
+            if (CGRectContainsPoint(self.contentView.frame, point) == NO) {
+                [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
+            }
+        }
+        else {
             [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
         }
-    }
-    else {
-        [self.presentingViewController dismissViewControllerAnimated:YES completion:nil];
     }
 }
 

@@ -23,4 +23,7 @@
 ///遮罩的透明度，默认0.5
 @property (nonatomic, assign) CGFloat maskViewAlpha;
 
+///点击contentView以外区域dismiss，默认为yes
+@property (nonatomic, assign) BOOL dismissWhenTapOutsideContentView;
+
 @end

@@ -1,5 +1,5 @@
 PODS:
-  - XKBasePresent (1.0.0)
+  - XKBasePresent (1.0.5)
 
 DEPENDENCIES:
   - XKBasePresent (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  XKBasePresent: 3f68ff83a97039fc1b455109ba4097f718356ffb
+  XKBasePresent: a6e2e579b806bde96a637ee156443dba5d7725a2
 
 PODFILE CHECKSUM: 4eea2017440e16a5466fd4718f5880c1427feeb6
 

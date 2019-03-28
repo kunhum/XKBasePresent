@@ -1,6 +1,6 @@
 {
   "name": "XKBasePresent",
-  "version": "1.0.0",
+  "version": "1.0.5",
   "summary": "弹窗控制器基类",
   "description": "UIPresentationController 封装，需要做成弹窗的控制器继承",
   "homepage": "https://github.com/kunhum/XKBasePresent",
@@ -13,7 +13,7 @@
   },
   "source": {
     "git": "https://github.com/kunhum/XKBasePresent.git",
-    "tag": "1.0.0"
+    "tag": "1.0.5"
   },
   "platforms": {
     "ios": "8.0"
